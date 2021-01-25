@@ -11,7 +11,9 @@
 
 (function() {
     'use strict';
-
+    // 免登陆自动加载更多!
     $("div.article_content").removeAttr("style");
     $("#btn-readmore").parent().remove();
+    // 去除顶部的广告（内容是“官方去广告”的那个）
+    $('#csdn-toolbar .toolbar-advert').remove();
 })();
